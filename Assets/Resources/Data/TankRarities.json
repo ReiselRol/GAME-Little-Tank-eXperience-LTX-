@@ -1,0 +1,73 @@
+{
+    "Rarities" : [
+        {
+            "Name" : {
+                "EN" : "Basic",
+                "ES" : "Básico"
+            },
+            "Description" : {
+                "EN" : "The simplest and easiest tanks and parts to obtain. They are functional but lack the advanced capabilities necessary for high-level competition.",
+                "ES" : "Los tanques y piezas más simples y fáciles de obtener. Són funcionales pero carecen de las capacidades avanzadas necesarias para la competición de alto nivel."
+            },
+            "Price" : 350,
+            "Chances" : 1
+        },
+        {
+            "Name" : {
+                "EN" : "Standard",
+                "ES" : "Estándar"
+            },
+            "Description" : {
+                "EN" : "Standard tanks and parts that are easy to obtain and suitable for new Commanders. They provide good overall performance but lack the advanced features of higher rarities.",
+                "ES" : "Tanques y piezas estándar que son fáciles de obtener y adecuados para nuevos Comandantes. Proporcionan un buen rendimiento general pero carecen de las características avanzadas de las rarezas superiores."
+            },
+            "Price" : 750
+        },
+        {
+            "Name" : {
+                "EN" : "Advanced",
+                "ES" : "Avanzado"
+            },
+            "Description" : {
+                "EN" : "Parts and tanks that represent a balance between innovation and accessibility. They are common in the inventory of competitive Commanders.",
+                "ES" : "Piezas y tanques que representan un equilibrio entre innovación y accesibilidad. Són comunes en el inventario de Comandantes competitivos."
+            },
+            "Price" : 1150
+        },
+        {
+            "Name" : {
+                "EN" : "Epic",
+                "ES" : "Épico"
+            },
+            "Description" : {
+                "EN" : "High quality tanks and parts that have proven themselves in competitions. They are highly desired for their performance and durability.",
+                "ES" : "Tanques y piezas de alta calidad que han demostrado su valía en competiciones. Són altamente deseados por su rendimiento y durabilidad."
+            },
+            "Price" : 1650
+        },
+        {
+            "Name" : {
+                "EN" : "Legendary",
+                "ES" : "Legendario"
+            },
+            "Description" : {
+                "EN" : "These tanks and parts, personally designed by Reisel, incorporate the most innovative technologies and are extremely difficult to obtain.",
+                "ES" : "Estos tanques y piezas, diseñados personalmente por Reisel, incorporan las tecnologías más innovadoras y son extremadamente difíciles de obtener."
+            },
+            "Price" : 2150,
+            "Chances" : 1.75
+        },
+        {
+            "Name" : {
+                "EN" : "Prototype",
+                "ES" : "Prototipo"
+            },
+            "Description" : {
+                "EN" : "Tank designs and experimental parts created by elite scientists and technicians in private studios. They are extremely rare, often clandestine due to the use of technology that may not be legal, and are never revealed to the public.",
+                "ES" : "Diseños de tanques y piezas experimentales creados por científicos y técnicos de élite en estudios privados. Son extremadamente raros, a menudo clandestinos debido al uso de tecnología que podría no ser legal, y nunca se revelan al público."
+            },
+            "Price" : 2950,
+            "Chances" : 0.25
+        }
+    ]
+}

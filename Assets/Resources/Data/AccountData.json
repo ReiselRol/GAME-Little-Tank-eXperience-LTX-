@@ -1,0 +1,11 @@
+{
+    "Name" : "",
+    "Email" : "",
+    "AccountID": "",
+    "Level" : 0,
+    "TotalXp" : 0,
+    "ActualXp" : 0,
+    "Inventory" : {
+        
+    }
+}

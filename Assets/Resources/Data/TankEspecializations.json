@@ -1,0 +1,54 @@
+{
+    "Especializations" : [
+        {
+            "Name" : {
+                "EN" : "Champion",
+                "ES" : "Campeón"
+            },
+            "Description" : {
+                "EN" : "Number of victories obtained in games (while this piece is being used).",
+                "ES" : "Número de victorias obtenidas en las partidas (mientras se está utilizando esta pieza)."
+            }
+        },
+        {
+            "Name" : {
+                "EN" : "Defender",
+                "ES" : "Defensor"
+            },
+            "Description" : {
+                "EN" : "Number of rounds won while defending an attack (while this piece is being used).",
+                "ES" : "Número de rondas ganadas mientras estas defendiendo un ataque (mientras se está utilizando esta pieza)."
+            }
+        },
+        {
+            "Name" : {
+                "EN" : "Deactivator",
+                "ES" : "Desactivador"
+            },
+            "Description" : {
+                "EN" : "Number of times an enemy bomb has been defused (while this piece is being used).",
+                "ES" : "Número de veces que se ha desactivado una bomba enemiga (mientras se está utilizando esta pieza)."
+            }
+        },
+        {
+            "Name" : {
+                "EN" : "Statesman",
+                "ES" : "Estadista"
+            },
+            "Description" : {
+                "EN" : "Number of times an enemy bomb has been defused (while this piece is being used).",
+                "ES" : "Número de puntos de daño infligido a los enemigos (mientras se está utilizando esta pieza)."
+            }
+        },
+        {
+            "Name" : {
+                "EN" : "Carrier",
+                "ES" : "Carrileador"
+            },
+            "Description" : {
+                "EN" : "Number of times you have defeated all enemies in a round alone (while this piece is being used).",
+                "ES" : "Número de veces en las que has derrotado a todos los enemigos de una ronda tu solo (mientras se está utilizando esta pieza)."
+            }
+        }
+    ]
+}

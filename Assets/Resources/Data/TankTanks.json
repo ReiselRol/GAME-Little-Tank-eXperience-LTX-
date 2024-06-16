@@ -1,0 +1,97 @@
+{
+    "Tanks" : [
+        {
+            "TypeID" : 3,
+            "Name" : {
+                "EN" : "Spectre",
+                "ES" : "Espectro"
+            },
+            "Lore" : {
+                "EN" : "The Specter is an elite tank created by Viktor and his team of engineers. Designed for maximum efficiency in stealth and maneuverability, the Specter is equipped with advanced camouflage technologies and proprietary protections. His light but durable armor allows for quick and precise movements, making him a formidable opponent on any battlefield.",
+                "ES" : "El Espectro es un tanque de élite creado por Viktor y su equipo de ingenieros. Diseñado para la máxima eficiencia en sigilo y maniobrabilidad, el Espectro está equipado con tecnologías avanzadas de camuflaje y preotecciónes propias. Su armadura ligera pero resistente permite movimientos rápidos y precisos, convirtiéndolo en un oponente formidable en cualquier campo de batalla."
+            },
+            "Stats": {
+                "MaxLife" : 0,
+                "MaxShield" : 1,
+                "ExtraDamage" : 4,
+                "Speed" : 2
+            },
+            "PiecesID" : {
+                "CoreID": 0,
+                "TracksID": 0,
+                "FrontArmor" : 0,
+                "RearArmor" : 0
+            }
+        },
+        {
+            "TypeID" : 0,
+            "Name" : {
+                "EN" : "Aegis",
+                "ES" : "Aegis"
+            },
+            "Lore" : {
+                "EN" : "The Specter is an elite tank created by Viktor and his team of engineers. Designed for maximum efficiency in stealth and maneuverability, the Specter is equipped with advanced camouflage technologies and proprietary protections. His light but durable armor allows for quick and precise movements, making him a formidable opponent on any battlefield.",
+                "ES" : ""
+            },
+            "Stats": {
+                "MaxLife" : 0,
+                "MaxShield" : 0,
+                "ExtraDamage" : 0,
+                "Speed" : 0
+            },
+            "PiecesID" : {
+                "CoreID": 1,
+                "TracksID": 1,
+                "FrontArmor" : 1,
+                "RearArmor" : 1
+            }
+        },
+        {
+            "TypeID" : 4,
+            "Name" : {
+                "EN" : "Format 0",
+                "ES" : "Formato 0"
+            },
+            "Lore" : {
+                "EN" : "Format 0 was born in the laboratories of a secret facility, financed by a conglomerate of countries seeking an unprecedented tactical advantage in LTX competitions. Reisel, with access to unlimited resources and a team of elite scientists, worked tirelessly to develop a tank that would not only be lethal in combat, but also provide unparalleled tactical support to his allies.",
+                "ES" : "El Format 0 nació en los laboratorios de una instalación secreta, financiada por un conglomerado de países que buscaban una ventaja táctica sin precedentes en las competiciones de LTX. Reisel, con acceso a recursos ilimitados y un equipo de científicos de élite, trabajó incansablemente para desarrollar un tanque que no solo fuera letal en el combate, sino que también proporcionara un soporte táctico sin igual a sus aliados."
+            },
+            "Stats": {
+                "MaxLife" : 0,
+                "MaxShield" : 2,
+                "ExtraDamage" : 0,
+                "Speed" : 5
+            },
+            "PiecesID" : {
+                "CoreID": 2,
+                "TracksID": 2,
+                "FrontArmor" : 2,
+                "RearArmor" : 2
+            }
+        },
+        {
+            "TypeID" : 3,
+            "Name" : {
+                "EN" : "O.N.U. (Offensive Naipe Unit)",
+                "ES" : "U.N.O. (Unidad de Naipe Ofensivo)"
+            },
+            "Lore" : {
+                "EN" : "In the large UNO organization, they realized that their card game is no longer played in this era where LTX is so innovative and famous, so they created a tank called U.N.O. (Offensive Card Unit), which uses skills related to the cards of his famous game.",
+                "ES" : "En la gran organización UNO, se dieron cuenta de que ya no se juega a su juego de cartas en esta época donde LTX es tan innovador y famoso, así que crearon un tanque llamado U.N.O. (Unidad de Naipe Ofensivo), el cual usa habilidades relacionadas con las cartas del famoso juego suyo."
+            },
+            "Stats": {
+                "MaxLife" : 0,
+                "MaxShield" : 1,
+                "ExtraDamage" : 5,
+                "Speed" : 1
+            },
+            "PiecesID" : {
+                "CoreID": 3,
+                "TracksID": 3,
+                "FrontArmor" : 3,
+                "RearArmor" : 3
+            }
+        }
+
+    ]
+}

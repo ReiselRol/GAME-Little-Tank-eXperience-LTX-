@@ -1,0 +1,95 @@
+{
+    "Colors": [
+        {
+            "Name": {
+                "EN": "Titanium White",
+                "ES": "Blanco titanio"
+            },
+            "Color": "FFFFFF"
+        },
+        {
+            "Name": {
+                "EN": "Yellow",
+                "ES": "Amarillo"
+            },
+            "Color": "FFFF00"
+        },
+        {
+            "Name": {
+                "EN": "Orange",
+                "ES": "Naranja"
+            },
+            "Color": "FFA500"
+        },
+        {
+            "Name": {
+                "EN": "Pink",
+                "ES": "Rosa"
+            },
+            "Color": "FFC0CB"
+        },
+        {
+            "Name": {
+                "EN": "Burn Sienna",
+                "ES": "Siena quemada"
+            },
+            "Color": "E97451"
+        },
+        {
+            "Name": {
+                "EN": "Red",
+                "ES": "Rojo"
+            },
+            "Color": "FF0000"
+        },
+        {
+            "Name": {
+                "EN": "Lime",
+                "ES": "Lima"
+            },
+            "Color": "00FF00"
+        },
+        {
+            "Name": {
+                "EN": "Green",
+                "ES": "Verde"
+            },
+            "Color": "008000"
+        },
+        {
+            "Name": {
+                "EN": "Sky Blue",
+                "ES": "Azul cielo"
+            },
+            "Color": "87CEEB"
+        },
+        {
+            "Name": {
+                "EN": "Cobalt",
+                "ES": "Cobalto"
+            },
+            "Color": "0047AB"
+        },
+        {
+            "Name": {
+                "EN": "Purple",
+                "ES": "Morado"
+            },
+            "Color": "C8A2C8"
+        },
+        {
+            "Name": {
+                "EN": "Gray",
+                "ES": "Gris"
+            },
+            "Color": "808080"
+        },
+        {
+            "Name": {
+                "EN": "Black",
+                "ES": "Negro"
+            },
+            "Color": "000000"
+        }
+    ]
+}

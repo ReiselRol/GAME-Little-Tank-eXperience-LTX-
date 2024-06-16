@@ -1,0 +1,290 @@
+{
+    "Core" : [
+        {
+            "PrefabID" : "Pieces/Core/Core_0",
+            "TankID" : 0,
+            "Name" : {
+                "EN" : "Spectral core",
+                "ES" : "Núcleo espectral"
+            },
+            "AbilityName": {
+                "EN" : "Spectre Veil",
+                "ES" : "Velo Espectral"
+            },
+            "AbilityDescription": {
+                "EN" : "Covers itself with nanobots and becomes invisible for 12 seconds. During this time, the tank can be heard and its presence can be noticed, but it cannot see. If the tank fires or uses another ability, it becomes visible while using them and returns to being invisible when not.",
+                "ES" : "Se cubre con nanobots y se vuelve invisible durante 12 segundos. Durante este tiempo, el tanque puede ser escuchado y se puede notar su presencia, pero no puede ver. Si el tanque dispara o usa otra habilidad, se vuelve visible mientras las usa y regresa a ser invisible cuando deja de usarlo."
+            },
+            "Charges" : 7
+        },
+        {
+            "PrefabID" : "Pieces/Core/Core_1",
+            "TankID" : 1,
+            "Name" : {
+                "EN" : "Aegis core",
+                "ES" : "Núcleo de Aegis"
+            },
+            "AbilityName": {
+                "EN" : "Shield of the ancients",
+                "ES" : "Muralla de los ancestros"
+            },
+            "AbilityDescription": {
+                "EN" : "Deploys an impenetrable shield that protects all nearby allies for a short period. The wall attacks forward, targeting nearby enemies and damaging them. The wall has 400 Life points. The wall disappears after 60 seconds.",
+                "ES" : "Despliega un escudo impenetrable que protege a todos los aliados cercanos durante un breve período. La muralla ataca hacia adelante apuntando a enemigos cercanos y dañandolos. La muralla tiene 400 puntos de Vida. La muralla desaparece despues de 60 segundos."
+            },
+            "Charges" : 6
+        },
+        {
+            "PrefabID" : "Pieces/Core/Core_2",
+            "TankID" : 2,
+            "Name" : {
+                "EN" : "Format 0 core",
+                "ES" : "Núcleo de Format 0"
+            },
+            "AbilityName": {
+                "EN" : "Mainframe",
+                "ES" : "Processador Central"
+            },
+            "AbilityDescription": {
+                "EN" : "Deploy neural networks in a specific direction. If these webs come into contact with an enemy while they are being created, the enemy is marked. The mark disables all enemy abilities until they destroy the tank that deployed the net. The mark disappears automatically after 20 seconds.",
+                "ES" : "Despliega redes neuronales hacia una dirección específica. Si estas redes entran en contacto con un enemigo mientras se están creando, el enemigo queda marcado. La marca desactiva todas las habilidades del enemigo hasta que destruyan al tanque que desplegó la red. La marca desaparece automáticamente después de 20 segundos."
+            },
+            "Charges" : 7
+        },
+        {
+            "PrefabID" : "Pieces/Core/Core_3",
+            "TankID" : 3,
+            "Name" : {
+                "EN" : "O.N.U. (Offensive Naipe Unit) core",
+                "ES" : "Núcleo de U.N.O. (Unidad de Naipe Ofensivo)"
+            },
+            "AbilityName": {
+                "EN" : "Draw +2",
+                "ES" : "Robar +2"
+            },
+            "AbilityDescription": {
+                "EN" : "Deploy 2 clones of your tank with your weapons and half of the player's maximum health, without a shield. These clones know how to move on their own following the owner tank. When they die, they do not drop their weapons and cannot use abilities. After 20 seconds, they die instantly, and if the owner dies, they die too.",
+                "ES" : "Despliega 2 clones de tu tanque con tus armas y la mitad de la vida máxima que el jugador posee, sin escudo. Estos clones saben moverse por sí solos siguiendo al tanque propietario. Cuando mueren, no sueltan sus armas y no pueden usar habilidades. Después de 20 segundos, mueren instantáneamente, y si muere el dueño, ellos también mueren."
+            },
+            "Charges" : 8
+        }
+    ],
+    "Tracks" : [
+        {
+            "PrefabID" : "Pieces/Tracks/Tracks_0",
+            "TankID" : 0,
+            "Name" : {
+                "EN" : "Spectral tracks",
+                "ES" : "Ruedas espectrales"
+            },
+            "AbilityName": {
+                "EN" : "Spectral sprint",
+                "ES" : "Propulsión sspectral"
+            },
+            "AbilityDescription": {
+                "EN" : "Increases Movement Speed by 20% for 8 seconds. If the ability is clicked again during these 8 seconds, the tank performs a dash, canceling the speed boost.",
+                "ES" : "Aumenta la Velocidad de movimiento en un 20% durante 8 segundos. Si la habilidad se clickea nuevamente durante estos 8 segundos, el tanque realiza un dash, cancelando el aumento de velocidad."
+            },
+            "Charges" : 2,
+            "Price" : 200
+        },
+        {
+            "PrefabID" : "Pieces/Tracks/Tracks_1",
+            "TankID" : 1,
+            "Name" : {
+                "EN" : "Aegis tracks",
+                "ES" : "Ruedas de Aegis"
+            },
+            "AbilityName": {
+                "EN" : "Holocharge",
+                "ES" : "Carga holográfica"
+            },
+            "AbilityDescription": {
+                "EN" : "It charges forward with great momentum, ramming enemies in his path. Deals 30 damage.",
+                "ES" : "Carga hacia adelante con gran ímpetu, embistiendo a los enemigos en su camino. Inflinge 30 de daños."
+            },
+            "Charges" : 2,
+            "Price" : 150
+        },
+        {
+            "PrefabID" : "Pieces/Tracks/Tracks_2",
+            "TankID" : 2,
+            "Name" : {
+                "EN" : "Format 0 tracks",
+                "ES" : "Ruedas de Format 0"
+            },
+            "AbilityName": {
+                "EN" : "Reinstalation",
+                "ES" : "Reinstalación"
+            },
+            "AbilityDescription": {
+                "EN" : "With the left click, the tank can copy the appearance of any tank, whether friendly or enemy. With the right click, it changes its appearance to that of a harmless box. If the tank fires or uses any other ability, the appearance returns to Format 0.",
+                "ES" : "Con el clic izquierdo, el tanque puede copiar la apariencia de cualquier tanque, ya sea aliado o enemigo. Con el clic derecho, cambia su apariencia a la de una caja inofensiva. Si el tanque dispara o usa cualquier otra habilidad, la apariencia vuelve a ser la del Format 0."
+            },
+            "Charges" : 1,
+            "Price" : 400
+        },
+        {
+            "PrefabID" : "Pieces/Tracks/Tracks_3",
+            "TankID" : 3,
+            "Name" : {
+                "EN" : "O.N.U. (Offensive Naipe Unit) tracks",
+                "ES" : "Ruedas de U.N.O. (Unidad de Naipe Ofensivo)"
+            },
+            "AbilityName": {
+                "EN" : "Reverse",
+                "ES" : "Reversa"
+            },
+            "AbilityDescription": {
+                "EN" : "When the ability is activated, for 5 seconds the bullets bounce instead of hitting the tank, but lose half the damage.",
+                "ES" : "Cuando se activa la habilidad, durante 5 segundos las balas rebotan en vez de impactar en el tanque, pero pierden la mitad del daño."
+            },
+            "Charges" : 1,
+            "Price" : 400
+        }
+    ],
+    "FrontArmor" : [
+        {
+            "PrefabID" : "Pieces/FrontArmor/FrontArmor_0",
+            "TankID" : 0,
+            "Name" : {
+                "EN" : "Spectral front armor",
+                "ES" : "Armadura frontal espectral"
+            },
+            "AbilityName": {
+                "EN" : "Spectral light",
+                "ES" : "Luz espectral"
+            },
+            "AbilityDescription": {
+                "EN" : "Throws a device that, upon bouncing off a wall, blinds enemies and allies who see it. If it does not bounce, it will blind once it comes to a complete stop.",
+                "ES" : "Lanza un dispositivo que, al rebotar con una pared, ciega a los enemigos y aliados que lo vean. Si no rebota, cegará una vez que quede completamente quieto."
+            },
+            "Charges" : 2,
+            "Price" : 200
+        },
+        {
+            "PrefabID" : "Pieces/FrontArmor/FrontArmor_1",
+            "TankID" : 1,
+            "Name" : {
+                "EN" : "Aegis's front armor",
+                "ES" : "Armadura frontal de Aegis"
+            },
+            "AbilityName": {
+                "EN" : "Holo-shield",
+                "ES" : "Escudo holográfico"
+            },
+            "AbilityDescription": {
+                "EN" : "Emits a holographic barrier to where it is looking that destroys bullets. This barrier disappears after 5 seconds.  ",
+                "ES" : "Emite una barrera holografica hacia donde esta mirando que destruye las balas. Esta barrera desaparece despues de 8 segundos."
+            },
+            "Charges" : 1,
+            "Price" : 350
+        },
+        {
+            "PrefabID" : "Pieces/FrontArmor/FrontArmor_2",
+            "TankID" : 2,
+            "Name" : {
+                "EN" : "Format 0 front armor",
+                "ES" : "Armadura frontal de Format 0"
+            },
+            "AbilityName": {
+                "EN" : "Download",
+                "ES" : "Descarga"
+            },
+            "AbilityDescription": {
+                "EN" : "With right click, you can add loads. By default, it starts with 0 charges and has a maximum of 2; If the 2 charges are exceeded, it returns to 0. With left click, you launch a projectile that will bounce as many times as it has charges. When the projectile bounces for the last time, it will blind all tanks that see it. If the projectile has 0 charges when it hits the wall, it automatically blinds; If you go too long without touching a wall, you also become blind.",
+                "ES" : "Con clic derecho, puedes añadir cargas. Por defecto, comienza con 0 cargas y tiene un máximo de 2; si se superan las 2 cargas, vuelve a 0. Con clic izquierdo, lanzas un proyectil que rebotará tantas veces como cargas tenga. Cuando el proyectil rebote por última vez, cegará a todos los tanques que lo vean. Si el proyectil tiene 0 cargas al tocar la pared, ciega automáticamente; si pasa mucho tiempo sin tocar una pared, también ciega."
+            },
+            "Charges" : 2,
+            "Price" : 150
+        },
+        {
+            "PrefabID" : "Pieces/FrontArmor/FrontArmor_3",
+            "TankID" : 3,
+            "Name" : {
+                "EN" : "O.N.U. (Offensive Naipe Unit)'s front armor",
+                "ES" : "Armadura frontal de U.N.O. (Unidad de Naipe Ofensivo)"
+            },
+            "AbilityName": {
+                "EN" : "I block you",
+                "ES" : "Te bloqueo"
+            },
+            "AbilityDescription": {
+                "EN" : "Throws a card which, when stopped or touches a wall, glows, blinding all tanks that are seeing it.",
+                "ES" : "Lanza una carta la cual, cuando se detiene o toca una pared, brilla, cegando a todos los tanques que la estén viendo."
+            },
+            "Charges" : 3,
+            "Price" : 150
+        }
+    ],
+    "RearArmor" : [
+        {
+            "PrefabID" : "Pieces/RearArmor/RearArmor_0",
+            "TankID" : 0,
+            "Name" : {
+                "EN" : "Spectral rear armor",
+                "ES" : "Armadura trasera espectral"
+            },
+            "AbilityName": {
+                "EN" : "Ectoplasmic shield",
+                "ES" : "Escudo de ectoplasma"
+            },
+            "AbilityDescription": {
+                "EN" : "Deploys a temporary shield that absorbs damage and converts it into energy for the tank. The shield absorbs up to 50 units of damage and, upon fading from damage, regenerates 25 units of health. The shield will fade after 15 seconds pass.",
+                "ES" : "Despliega un escudo temporal que absorbe daño y lo convierte en energía para el tanque. El escudo absorbe hasta 50 unidades de daño y, al desvanecerse por recibir daño, regenera 25 unidades de vida. El escudo se desvanecera después de que pasen 15 segundos."
+            },
+            "Charges" : 30
+        },
+        {
+            "PrefabID" : "Pieces/RearArmor/RearArmor_1",
+            "TankID" : 1,
+            "Name" : {
+                "EN" : "Aegis's rear armor",
+                "ES" : "Armadura trasera de Aegis"
+            },
+            "AbilityName": {
+                "EN" : "Countermeasure blast",
+                "ES" : "Explosión de contramedida"
+            },
+            "AbilityDescription": {
+                "EN" : "Deploys a defensive system that releases a burst of energy to repel and stun nearby enemies.",
+                "ES" : "Despliega un sistema defensivo que libera una explosión de energía para repeler y aturdir a los enemigos cercanos."
+            },
+            "Charges" : 25
+        },
+        {
+            "PrefabID" : "Pieces/RearArmor/RearArmor_2",
+            "TankID" : 2,
+            "Name" : {
+                "EN" : "Format 0 rear armor",
+                "ES" : "Armadura trasera de Format 0"
+            },
+            "AbilityName": {
+                "EN" : "Update",
+                "ES" : "Actualización"
+            },
+            "AbilityDescription": {
+                "EN" : "Teleports to a visible area of the tank's choosing",
+                "ES" : "Se teletransporta a una zona visible a elección del tanque."
+            },
+            "Charges" : 22
+        },
+        {
+            "PrefabID" : "Pieces/RearArmor/RearArmor_3",
+            "TankID" : 3,
+            "Name" : {
+                "EN" : "O.N.U. (Offensive Naipe Unit)'s rear armor",
+                "ES" : "Armadura trasera de U.N.O. (Unidad de Naipe Ofensivo)"
+            },
+            "AbilityName": {
+                "EN" : "Cambio Color",
+                "ES" : "Color Change"
+            },
+            "AbilityDescription": {
+                "EN" : "When activated, the tank receives a vision area increase for 15 seconds.",
+                "ES" : "Cuando se activa, el tanque recibe un aumento de área de visión durante 15 segundos."
+            },
+            "Charges" : 22
+        }
+    ]
+}

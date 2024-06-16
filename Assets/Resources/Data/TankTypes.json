@@ -1,0 +1,54 @@
+{
+    "Types" : [
+        {
+            "Name" : {
+                "EN" : "Generic",
+                "ES" : "Genérico"
+            },
+            "Description" : {
+                "EN" : "Generic tanks do not receive any positive effects on attributes such as health, shield, speed or damage. White pieces are versatile and can have any ability, allowing players to create unique and custom combinations.",
+                "ES" : "Los tanques Genéricos no reciben ningún efecto positivo en atributos como vida, escudo, velocidad o daño. Las piezas blancas son versátiles y pueden tener cualquier habilidad, lo que permite a los jugadores crear combinaciones únicas y personalizadas."
+            }
+        },
+        {
+            "Name" : {
+                "EN" : "Sentinel",
+                "ES" : "Centinela"
+            },
+            "Description" : {
+                "EN" : "Sentinel tanks are designed to defend specific areas. Its pieces increase the maximum shield and its abilities include traps, detectors and barriers to control the area.",
+                "ES" : "Los tanques Centinela están diseñados para defender zonas específicas. Sus piezas incrementan el escudo máximo y sus habilidades incluyen trampas, detectores y barreras para controlar el área."
+            }
+        },
+        {
+            "Name" : {
+                "EN" : "Controller",
+                "ES" : "Controlador"
+            },
+            "Description" : {
+                "EN" : "Controller tanks are designed to disrupt and delay the enemy. Its pieces increase maximum health and its abilities include smoke, screens and blinders to hinder enemy advances.",
+                "ES" : "Los tanques Controlador están diseñados para interrumpir y retrasar al enemigo. Sus piezas aumentan la vida máxima y sus habilidades incluyen humos, pantallas y cegadoras para dificultar los avances enemigos."
+            }
+        },
+        {
+            "Name" : {
+                "EN" : "Duelist",
+                "ES" : "Duelista"
+            },
+            "Description" : {
+                "EN" : "Duelist tanks focus on maximizing damage. Their pieces significantly increase additional damage and are designed to be aggressive, with abilities that include stun, blind, and high mobility.",
+                "ES" : "Los tanques Duelistas se enfocan en maximizar el daño. Sus piezas incrementan significativamente el daño adicional y están diseñadas para ser agresivos, con habilidades que incluyen estuneos, cegadoras y alta movilidad."
+            }
+        },
+        {
+            "Name" : {
+                "EN" : "Iniciator",
+                "ES" : "Iniciador"
+            },
+            "Description" : {
+                "EN" : "Initiator tanks focus on speed and mobility. Its pieces increase movement speed and its abilities are aimed at supporting the team with stuns, blinders, and detection skills.",
+                "ES" : "Los tanques Iniciador se centran en la velocidad y la movilidad. Sus piezas incrementan la velocidad de movimiento y sus habilidades están orientadas a apoyar al equipo con estuneos, cegadoras y habilidades de detección."
+            }
+        }
+    ]
+}

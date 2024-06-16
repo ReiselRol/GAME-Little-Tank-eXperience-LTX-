@@ -1,0 +1,18 @@
+{
+    "ItemList" : [
+        {
+            "Name" : {
+                "EN" : "Spectral core",
+                "ES" : "Núcleo espectral"
+            },
+            "RarityID" : 5,
+            "TypeID" : 3,
+            "CoreID" : 0,
+            "TracksID" : -1,
+            "FrontArmorID" : -1,
+            "RearArmorID" : -1,
+            "SpriteID" : "",
+            "CrateID" : -1
+        }
+    ]
+}
