@@ -20,8 +20,10 @@ public partial class Tank
     /// <summary>This is the Piece ID of Rear Armor</summary>
     [SerializeField] public int ConfiguredRearArmorID = 0;
     [Header("Other Configs")]
-    /// <summary>This is the Piece ID of Rear Armor</summary>
+    /// <summary>This is If we want to be an unactived Tank</summary>
     [SerializeField] public bool ConfiguredIsActived = true;
+    /// <summary>This is If we want to be an unactived Tank</summary>
+    [SerializeField] public bool ConfiguredIsABot = false;
     /// <summary>
     /// This Propertie is for define the team that is the tank from<br></br>
     /// If the team is -1 is for noone team.
@@ -294,6 +296,10 @@ public partial class Tank
     /// <summary> This Functions return the GameObject of Rear Armor Piece</summary>
     /// <returns>GameObject of Rear Armor Piece</returns>
     public GameObject GetRearArmorGameObject() { return this.RearArmorGameObject; }
+    /// <summary>Normal setter to determinate if this tank is a bot</summary>
+    public void SetIsABot(bool IsABot){ this.ConfiguredIsABot = IsABot; }
+    /// <summary>Returns if this tank is a bot or no</summary>
+    public bool GetIsABot() {  return this.ConfiguredIsABot; }
     /// <summary>If you want to see all the Tank props on console use this</summary>
     /// <returns>The tank info in a String</returns>
     override public string ToString()
