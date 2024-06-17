@@ -123,6 +123,8 @@ public partial class Tank
     {
         this.SpriteRender = this.GetComponent<SpriteRenderer>();
         this.Rigidbody2D = this.GetComponent<Rigidbody2D>();
+
+        this.SpriteRender.color = ColorManager.MakeColor(255, 255, 255, 0);
     }
     /// <summary> This Function is for set the extra stat bonus that the tank recive <br></br>For choosing some specific pieces.</summary>
     private void SetTankPiecesStatBonus()
@@ -187,7 +189,7 @@ public partial class Tank
             if (this.RearArmorGameObject != null) Destroy(this.RearArmorGameObject);
             this.RearArmorGameObject = Instantiate(PiecePrefab, this.transform);
             this.RearArmorGameObject.transform.SetParent(this.transform);
-            this.RearArmorGameObject.GetComponent<SpriteRenderer>().sortingOrder = this.SpriteRender.sortingOrder + 1;
+            this.RearArmorGameObject.GetComponent<SpriteRenderer>().sortingOrder = this.SpriteRender.sortingOrder + 2;
         }
     }
     /// <summary> This Function set the values of the front armor based on the FrontArmor ID</summary>
@@ -200,7 +202,7 @@ public partial class Tank
             if (this.FrontArmorGameObject != null) Destroy(this.FrontArmorGameObject);
             this.FrontArmorGameObject = Instantiate(PiecePrefab, this.transform);
             this.FrontArmorGameObject.transform.SetParent(this.transform);
-            this.FrontArmorGameObject.GetComponent<SpriteRenderer>().sortingOrder = this.SpriteRender.sortingOrder + 1;
+            this.FrontArmorGameObject.GetComponent<SpriteRenderer>().sortingOrder = this.SpriteRender.sortingOrder + 2;
         }
     }
     /// <summary> This Function set the values of the tracks based on the Tracks ID</summary>

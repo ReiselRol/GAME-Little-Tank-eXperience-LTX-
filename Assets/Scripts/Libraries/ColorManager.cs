@@ -8,7 +8,7 @@ public static class ColorManager
     /// <param name="B">a number between 0 and 255 of Red Tint</param>
     /// <param name="Alpha">a number between 0 and 255 of Red Tint</param>
     /// <returns>Returns a UnityEngine.Color</returns>
-    public static Color MakeColor(int R, int G, int B, int Alpha = 255)
+    public static UnityEngine.Color MakeColor(int R, int G, int B, int Alpha = 255)
     {
         return new Color ((float)R / 255.0f, (float)G / 255.0f, (float)B / 255.0f, (float)Alpha / 255.0f);
     }

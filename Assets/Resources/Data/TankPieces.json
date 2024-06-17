@@ -174,8 +174,8 @@
                 "ES" : "Escudo holográfico"
             },
             "AbilityDescription": {
-                "EN" : "Emits a holographic barrier to where it is looking that destroys bullets. This barrier disappears after 5 seconds.  ",
-                "ES" : "Emite una barrera holografica hacia donde esta mirando que destruye las balas. Esta barrera desaparece despues de 8 segundos."
+                "EN" : "Emits a Fire barrier to where it is looking that destroys bullets. This barrier disappears after 5 seconds.  ",
+                "ES" : "Emite una barrera de Fuego hacia donde esta mirando que destruye las balas. Esta barrera desaparece despues de 8 segundos."
             },
             "Charges" : 1,
             "Price" : 350
