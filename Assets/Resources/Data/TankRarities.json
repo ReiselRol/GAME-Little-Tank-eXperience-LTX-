@@ -10,7 +10,8 @@
                 "ES" : "Los tanques y piezas más simples y fáciles de obtener. Són funcionales pero carecen de las capacidades avanzadas necesarias para la competición de alto nivel."
             },
             "Price" : 350,
-            "Chances" : 1
+            "Chances" : 32
+            
         },
         {
             "Name" : {
@@ -21,7 +22,8 @@
                 "EN" : "Standard tanks and parts that are easy to obtain and suitable for new Commanders. They provide good overall performance but lack the advanced features of higher rarities.",
                 "ES" : "Tanques y piezas estándar que son fáciles de obtener y adecuados para nuevos Comandantes. Proporcionan un buen rendimiento general pero carecen de las características avanzadas de las rarezas superiores."
             },
-            "Price" : 750
+            "Price" : 750,
+            "Chances" : 27
         },
         {
             "Name" : {
@@ -32,7 +34,8 @@
                 "EN" : "Parts and tanks that represent a balance between innovation and accessibility. They are common in the inventory of competitive Commanders.",
                 "ES" : "Piezas y tanques que representan un equilibrio entre innovación y accesibilidad. Són comunes en el inventario de Comandantes competitivos."
             },
-            "Price" : 1150
+            "Price" : 1150,
+            "Chances" : 22
         },
         {
             "Name" : {
@@ -43,7 +46,8 @@
                 "EN" : "High quality tanks and parts that have proven themselves in competitions. They are highly desired for their performance and durability.",
                 "ES" : "Tanques y piezas de alta calidad que han demostrado su valía en competiciones. Són altamente deseados por su rendimiento y durabilidad."
             },
-            "Price" : 1650
+            "Price" : 1650,
+            "Chances" : 17
         },
         {
             "Name" : {

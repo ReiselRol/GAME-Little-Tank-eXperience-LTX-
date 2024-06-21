@@ -17,7 +17,7 @@ public partial class Tank : MonoBehaviour
         {
             this.BeforeStep();
             this.Step();
-            this.AfterStep();
         }
+        this.AfterStep();
     }
 }

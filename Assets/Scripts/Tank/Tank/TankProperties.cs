@@ -24,11 +24,14 @@ public partial class Tank
     [SerializeField] public bool ConfiguredIsActived = true;
     /// <summary>This is If we want to be an unactived Tank</summary>
     [SerializeField] public bool ConfiguredIsABot = false;
+    /// <summary> </summary>
+    [SerializeField] public bool ConfiguredIsMainCamera = false;
     /// <summary>
     /// This Propertie is for define the team that is the tank from<br></br>
     /// If the team is -1 is for noone team.
     /// </summary>
     private int Team = -1;
+    private Quaternion TankAngle = new Quaternion(0,0,0,0); 
     /// <summary> This Propertie represent the Base value of Spped that Have the Tank. </summary>
     private int BaseSpeed;
     /// <summary> This Propertie represent the Name of the player is playing this Tank. </summary>
@@ -79,6 +82,10 @@ public partial class Tank
     private float MovementVerticalAxis;
     /// <summary>This propertie saves de axis of the horizontal movement (-1 to left and 1 to right)</summary>
     private float MovementHorizontalAxis;
+    /// <summary>This prop has the Main Camera of that tank (normally is disabled)</summary>
+    private GameObject CameraGameObject;
+    /// <summary>This is an important Gameobject that only gonna have actived the Main Tank</summary>
+    private GameObject LightGameObject;
     /// <summary> This Function is gonna to set some properties to default values that other properties<br></br> Has defined but because is not static i can't assign it at the start.</summary>
     private void TankStartPropertiesSetter ()
     {
@@ -89,6 +96,19 @@ public partial class Tank
     private void  InitializeWheelsAnimations ()
     {
         GameObject TracksPrefab = Resources.Load<GameObject>("Objects/Tank/Tracks");
+        GameObject CameraPrefab = Resources.Load<GameObject>("Objects/Scene/MainCamera");
+        GameObject LightPrefab = Resources.Load<GameObject>("Objects/Scene/TankLight");
+
+        this.CameraGameObject = Instantiate(CameraPrefab);
+        this.LightGameObject = Instantiate(LightPrefab);
+        this.LightGameObject.transform.SetParent(this.transform);
+
+        if (!ConfiguredIsMainCamera)
+        {
+            this.CameraGameObject.SetActive(false);
+            this.LightGameObject.SetActive(false);
+        }
+
         this.TracksAnimations[0] = Instantiate(TracksPrefab, this.transform);
         this.TracksAnimations[1] = Instantiate(TracksPrefab, this.transform);
 
@@ -125,8 +145,8 @@ public partial class Tank
     {
         this.SpriteRender = this.GetComponent<SpriteRenderer>();
         this.Rigidbody2D = this.GetComponent<Rigidbody2D>();
-
         this.SpriteRender.color = ColorManager.MakeColor(255, 255, 255, 0);
+        this.Rigidbody2D.transform.rotation = new Quaternion(0, 0, 0, 0);
     }
     /// <summary> This Function is for set the extra stat bonus that the tank recive <br></br>For choosing some specific pieces.</summary>
     private void SetTankPiecesStatBonus()

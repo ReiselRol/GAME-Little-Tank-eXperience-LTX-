@@ -67,6 +67,23 @@
                 "ES" : "Despliega 2 clones de tu tanque con tus armas y la mitad de la vida máxima que el jugador posee, sin escudo. Estos clones saben moverse por sí solos siguiendo al tanque propietario. Cuando mueren, no sueltan sus armas y no pueden usar habilidades. Después de 20 segundos, mueren instantáneamente, y si muere el dueño, ellos también mueren."
             },
             "Charges" : 8
+        },
+        {
+            "PrefabID" : "Pieces/Core/Core_4",
+            "TankID" : 4,
+            "Name" : {
+                "EN" : "Frost core",
+                "ES" : "Núcleo de Escarcha"
+            },
+            "AbilityName": {
+                "EN" : "Winter storm",
+                "ES" : "Tormanta invernal"
+            },
+            "AbilityDescription": {
+                "EN" : "Deploys a winter storm at the mouse's position, turning the ground into slippery ice. Enemies within the storm slowly lose life.",
+                "ES" : "Despliega una tormenta invernal en la posición del ratón, que convierte el suelo en hielo resbaladizo. Los enemigos dentro de la tormenta pierden vida lentamente."
+            },
+            "Charges" : 7
         }
     ],
     "Tracks" : [
@@ -141,6 +158,24 @@
             },
             "Charges" : 1,
             "Price" : 400
+        },
+        {
+            "PrefabID" : "Pieces/Tracks/Tracks_4",
+            "TankID" : 4,
+            "Name" : {
+                "EN" : "Frost tracks",
+                "ES" : "Ruedas de Escarcha"
+            },
+            "AbilityName": {
+                "EN" : "Wall of ice",
+                "ES" : "Pared de hielo"
+            },
+            "AbilityDescription": {
+                "EN" : "Deploys an ice wall made up of blocks that you can destroy by attacking them. With left click you place the wall and with right click you rotate it to adjust it before placing it.",
+                "ES" : "Despliega un muro de hielo compuesto por bloques que puedes destruir atacándolos. Con clic izquierdo colocas el muro y con clic derecho lo haces rotar para ajustarlo antes de colocarlo."
+            },
+            "Charges" : 1,
+            "Price" : 300
         }
     ],
     "FrontArmor" : [
@@ -215,6 +250,24 @@
             },
             "Charges" : 3,
             "Price" : 150
+        },
+        {
+            "PrefabID" : "Pieces/FrontArmor/FrontArmor_4",
+            "TankID" : 4,
+            "Name" : {
+                "EN" : "Frost front armor",
+                "ES" : "Armadura frontal de Escarcha"
+            },
+            "AbilityName": {
+                "EN" : "Snowball",
+                "ES" : "Bola de nieve"
+            },
+            "AbilityDescription": {
+                "EN" : "Throws a fragmentary grenade that, when exploded, deals damage and scatters ice cubes. These cubes then explode, causing more damage and freezing the ground to make it slippery. The grenade can bounce off walls.",
+                "ES" : "Lanza una granada fragmentaria que, al estallar, causa daño y dispersa cubitos de hielo. Estos cubitos explotan después, causando más daño y congelando el suelo para hacerlo resbaladizo. La granada puede rebotar en las paredes."
+            },
+            "Charges" : 2,
+            "Price" : 150
         }
     ],
     "RearArmor" : [
@@ -285,6 +338,23 @@
                 "ES" : "Cuando se activa, el tanque recibe un aumento de área de visión durante 15 segundos."
             },
             "Charges" : 22
+        },
+        {
+            "PrefabID" : "Pieces/RearArmor/RearArmor_4",
+            "TankID" : 4,
+            "Name" : {
+                "EN" : "Frost rear armor",
+                "ES" : "Armadura trasera de Escarcha"
+            },
+            "AbilityName": {
+                "EN" : "Snow globe",
+                "ES" : "Globo de nieve"
+            },
+            "AbilityDescription": {
+                "EN" : "Place a snow globe at the mouse's position; snow globes act like smoke.",
+                "ES" : "Coloca un globo de nieve en la posición del ratón; los globos de nieve actúan como humos."
+            },
+            "Charges" : 30
         }
     ]
 }

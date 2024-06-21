@@ -61,9 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\RootSources2dEditor.cs" />
-    <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshLinkEditor.cs" />
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\CollectSourcesCache2dEditor.cs" />
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshModifierTilemapEditor.cs" />
+    <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshAgentAttributePropertyDrawer.cs" />
+    <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshAreaAttributePropertyDrawer.cs" />
+    <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshLinkEditor.cs" />
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshComponentsGUIUtility.cs" />
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshModifierVolumeEditor.cs" />
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\CollectSources2dEditor.cs" />
@@ -71,8 +73,6 @@
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshSurfaceEditor.cs" />
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\AgentOverride2dEditor.cs" />
     <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshAssetManager.cs" />
-    <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshAgentAttributePropertyDrawer.cs" />
-    <Compile Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshAreaAttributePropertyDrawer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Scripts\Libraries\OtherLibraries\NavMeshComponents\Editor\NavMeshComponentsEditor.asmdef" />

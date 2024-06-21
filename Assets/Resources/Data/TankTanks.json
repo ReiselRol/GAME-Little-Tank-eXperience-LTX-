@@ -91,7 +91,29 @@
                 "FrontArmor" : 3,
                 "RearArmor" : 3
             }
+        },
+        {
+            "TypeID" : 2,
+            "Name" : {
+                "EN" : "Frost",
+                "ES" : "Escarcha"
+            },
+            "Lore" : {
+                "EN" : "Frost is a Swiss tank inspired by the cold. He has the ability to freeze and make his opponents slide, making it difficult for them to access certain strategic areas.",
+                "ES" : "Escarcha es un tanque suizo inspirado en el frío. Tiene la capacidad de congelar y hacer resbalar a sus oponentes, dificultándoles el acceso a ciertas áreas estratégicas."
+            },
+            "Stats": {
+                "MaxLife" : 4,
+                "MaxShield" : 2,
+                "ExtraDamage" : 0,
+                "Speed" : 1
+            },
+            "PiecesID" : {
+                "CoreID": 4,
+                "TracksID": 4,
+                "FrontArmor" : 4,
+                "RearArmor" : 4
+            }
         }
-
     ]
 }
