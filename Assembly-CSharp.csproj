@@ -62,11 +62,14 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Libraries\RR\Angle.cs" />
     <Compile Include="Assets\Scripts\GlobalLightStarter\GlobalLightStarter.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponProperties.cs" />
+    <Compile Include="Assets\Scripts\Weapons\WeaponEngine.cs" />
     <Compile Include="Assets\Scripts\Tank\Tank\Tank.cs" />
     <Compile Include="Assets\Scripts\Tank\Classes\DataClasses\TanksDataClasses.cs" />
     <Compile Include="Assets\Scripts\Libraries\RR\ColorManager.cs" />
     <Compile Include="Assets\Scripts\Tank\Tank\TankProperties.cs" />
     <Compile Include="Assets\Scripts\Tank\Tank\TankAnimation.cs" />
+    <Compile Include="Assets\Scripts\Weapons\Weapon.cs" />
     <Compile Include="Assets\Scripts\Tank\Classes\GenericClasses.cs" />
     <Compile Include="Assets\Scripts\GameGeneric\Classes\Timer.cs" />
     <Compile Include="Assets\Scripts\Libraries\RR\ExtraTransform.cs" />
@@ -76,6 +79,7 @@
     <Compile Include="Assets\Scripts\Tank\Tank\TankEngine.cs" />
     <Compile Include="Assets\Scripts\Tank\Classes\DataClasses\PiecesDataClasses.cs" />
     <Compile Include="Assets\ShadowCaster2DCreator.cs" />
+    <Compile Include="Assets\Scripts\GameGeneric\Interfaces\PieceInterface.cs" />
     <Compile Include="Assets\Scripts\Tank\Classes\DataClasses\ItemsDataClasses.cs" />
     <Compile Include="Assets\Scripts\GameGeneric\Interfaces\GeneralInterfaces.cs" />
     <Compile Include="Assets\Scripts\Tank\Classes\DataClasses\RaritiesDataClasses.cs" />

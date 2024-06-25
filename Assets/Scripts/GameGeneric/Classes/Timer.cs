@@ -14,6 +14,10 @@ public class Timer
         this.TicksRemaining = TicksRemaining;
         this.MaxTicks = MaxTicks;
     }
+    public Timer(int MaxTicks)
+    {
+        this.MaxTicks = MaxTicks;
+    }
     /// <summary> This function simply set the value of the TicksRemaining to the MaxTicks</summary>
     public void Reset ()
     {
@@ -33,5 +37,11 @@ public class Timer
     public bool IsFinished ()
     {
         return this.TicksRemaining <= 0;
+    }
+    /// <summary>This is for set the cooldown</summary>
+    /// <param name="ActualTicks">the ticks you gonna set to cooldown</param>
+    public void setActualTicks (int ActualTicks)
+    {
+        this.TicksRemaining = ActualTicks;
     }
 }

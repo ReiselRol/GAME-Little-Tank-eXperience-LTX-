@@ -19,6 +19,13 @@ public partial class Tank
     [SerializeField] public int ConfiguredFrontArmorID = 0;
     /// <summary>This is the Piece ID of Rear Armor</summary>
     [SerializeField] public int ConfiguredRearArmorID = 0;
+    [Header("Vanities")]
+    /// <summary>This is the Piece ID of Core Vanity</summary>
+    [SerializeField] public int ConfiguredCoreVanityID = -1;
+    /// <summary>This is the Piece ID of Front Armor Vanity</summary>
+    [SerializeField] public int ConfiguredFrontArmorVanityID = -1;
+    /// <summary>This is the Piece ID of Rear Armor Vanity.</summary>
+    [SerializeField] public int ConfiguredRearArmorVanityID = -1;
     [Header("Other Configs")]
     /// <summary>This is If we want to be an unactived Tank</summary>
     [SerializeField] public bool ConfiguredIsActived = true;
@@ -96,8 +103,8 @@ public partial class Tank
     private void  InitializeWheelsAnimations ()
     {
         GameObject TracksPrefab = Resources.Load<GameObject>("Objects/Tank/Tracks");
-        GameObject CameraPrefab = Resources.Load<GameObject>("Objects/Scene/MainCamera");
-        GameObject LightPrefab = Resources.Load<GameObject>("Objects/Scene/TankLight");
+        GameObject CameraPrefab = Resources.Load<GameObject>("Objects/Tank/MainCamera");
+        GameObject LightPrefab = Resources.Load<GameObject>("Objects/Tank/TankLight");
 
         this.CameraGameObject = Instantiate(CameraPrefab);
         this.LightGameObject = Instantiate(LightPrefab);
@@ -114,6 +121,9 @@ public partial class Tank
 
         this.TracksAnimations[0].transform.SetParent(this.transform);
         this.TracksAnimations[1].transform.SetParent(this.transform);
+
+        this.TracksAnimations[0].transform.localScale = this.transform.localScale;
+        this.TracksAnimations[1].transform.localScale = this.transform.localScale;
 
         this.TracksAnimations[1].GetComponent<SpriteRenderer>().flipY = true;
         this.TracksAnimations[1].GetComponent<SpriteRenderer>().sortingOrder = this.SpriteRender.sortingOrder - 1;
@@ -199,7 +209,33 @@ public partial class Tank
             if (this.CoreGameObject != null) Destroy(this.CoreGameObject);
             this.CoreGameObject = Instantiate(PiecePrefab, this.transform);
             this.CoreGameObject.transform.SetParent(this.transform);
+            this.CoreGameObject.transform.localScale = this.transform.localScale;
+            BuildCoreVanity();
         }
+    }
+    /// <summary>This gonna Change the vanity of </summary>
+    private void BuildCoreVanity()
+    {
+        BuildCoreVanity(this.ConfiguredCoreVanityID);
+    }
+    /// <summary>This change the sprite of the piece Core</summary>
+    /// <param name="VanityID">the id of the piece you want to renplce the sprite</param>
+    private void BuildCoreVanity(int VanityID)
+    {
+        if (VanityID > -1)
+        {
+            SpriteRenderer pieceSpriteRenderer = this.CoreGameObject.GetComponent<SpriteRenderer>();
+            if (pieceSpriteRenderer != null)
+            {
+                Sprite sprite = Resources.Load<Sprite>("Imgs/Tanks/Core/Core_" + VanityID);
+                if (sprite != null) pieceSpriteRenderer.sprite = sprite;
+            }
+        }
+    }
+    /// <summary>Reset the Core Vanity</summary>
+    private void UnBuildCoreVanity()
+    {
+        BuildCoreVanity(this.ConfiguredCoreID);
     }
     /// <summary> This Function set the values of the rear armor based on the RearArmor ID</summary>
     private void BuildRearArmor (int RearArmorID)
@@ -211,8 +247,34 @@ public partial class Tank
             if (this.RearArmorGameObject != null) Destroy(this.RearArmorGameObject);
             this.RearArmorGameObject = Instantiate(PiecePrefab, this.transform);
             this.RearArmorGameObject.transform.SetParent(this.transform);
+            this.RearArmorGameObject.transform.localScale = this.transform.localScale;
             this.RearArmorGameObject.GetComponent<SpriteRenderer>().sortingOrder = this.SpriteRender.sortingOrder + 2;
+            BuildRearArmorVanity();
         }
+    }
+    /// <summary>This gonna Change the vanity of Rear Armor</summary>
+    private void BuildRearArmorVanity()
+    {
+        BuildRearArmorVanity(this.ConfiguredRearArmorVanityID);
+    }
+    /// <summary>This change the sprite of the piece Core</summary>
+    /// <param name="VanityID">the id of the piece you want to renplce the sprite</param>
+    private void BuildRearArmorVanity(int VanityID)
+    {
+        if (VanityID > -1)
+        {
+            SpriteRenderer pieceSpriteRenderer = this.RearArmorGameObject.GetComponent<SpriteRenderer>();
+            if (pieceSpriteRenderer != null)
+            {
+                Sprite sprite = Resources.Load<Sprite>("Imgs/Tanks/RearArmor/RearArmor_" + VanityID);
+                if (sprite != null) pieceSpriteRenderer.sprite = sprite;
+            }
+        }
+    }
+    /// <summary>Reset the Core Vanity</summary>
+    private void UnBuildRearArmorVanity()
+    {
+        BuildRearArmorVanity(this.ConfiguredRearArmorID);
     }
     /// <summary> This Function set the values of the front armor based on the FrontArmor ID</summary>
     private void BuildFrontArmor(int FrontArmorID)
@@ -224,8 +286,34 @@ public partial class Tank
             if (this.FrontArmorGameObject != null) Destroy(this.FrontArmorGameObject);
             this.FrontArmorGameObject = Instantiate(PiecePrefab, this.transform);
             this.FrontArmorGameObject.transform.SetParent(this.transform);
+            this.FrontArmorGameObject.transform.localScale = this.transform.localScale;
             this.FrontArmorGameObject.GetComponent<SpriteRenderer>().sortingOrder = this.SpriteRender.sortingOrder + 2;
+            BuildFrontArmorVanity();
         }
+    }
+    /// <summary>This gonna Change the vanity of Front Armor</summary>
+    private void BuildFrontArmorVanity()
+    {
+        BuildFrontArmorVanity(this.ConfiguredFrontArmorVanityID);
+    }
+    /// <summary>This change the sprite of the piece Core</summary>
+    /// <param name="VanityID">the id of the piece you want to renplce the sprite</param>
+    private void BuildFrontArmorVanity(int VanityID)
+    {
+        if (VanityID > -1)
+        {
+            SpriteRenderer pieceSpriteRenderer = this.FrontArmorGameObject.GetComponent<SpriteRenderer>();
+            if (pieceSpriteRenderer != null)
+            {
+                Sprite sprite = Resources.Load<Sprite>("Imgs/Tanks/FrontArmor/FrontArmor_" + VanityID);
+                if (sprite != null) pieceSpriteRenderer.sprite = sprite;
+            }
+        }
+    }
+    /// <summary>Reset the Core Vanity</summary>
+    private void UnBuildFrontArmorVanity()
+    {
+        BuildFrontArmorVanity(this.ConfiguredFrontArmorID);
     }
     /// <summary> This Function set the values of the tracks based on the Tracks ID</summary>
     private void BuildTracks(int TracksID)
@@ -318,6 +406,14 @@ public partial class Tank
     public GameObject GetRearArmorGameObject() { return this.RearArmorGameObject; }
     /// <summary>Normal setter to determinate if this tank is a bot</summary>
     public void SetIsABot(bool IsABot){ this.ConfiguredIsABot = IsABot; }
+    public void SetConfiguredPieces(int CoreID, int RearArmorID, int FrontArmorID, int TracksID)
+    {
+        this.ConfiguredCoreID = CoreID;
+        this.ConfiguredRearArmorID = RearArmorID;
+        this.ConfiguredFrontArmorID = FrontArmorID;
+        this.ConfiguredTracksID = TracksID;
+        BuildTank(CoreID, RearArmorID, FrontArmorID, TracksID);
+    }
     /// <summary>Returns if this tank is a bot or no</summary>
     public bool GetIsABot() {  return this.ConfiguredIsABot; }
     /// <summary>If you want to see all the Tank props on console use this</summary>
@@ -345,5 +441,19 @@ public partial class Tank
                       + "\n" + this.RearArmor.ToString() + "\n"
                       + "\n--------------------------------------------------------------";
         return ToString;
+    }
+    /// <summary>This function will change the sprites of the pieces to original pieces</summary>
+    public void UnBuildVanity ()
+    {
+        UnBuildCoreVanity();
+        UnBuildRearArmorVanity();
+        UnBuildFrontArmorVanity();
+    }
+    /// <summary>This functions will change the sprites of the ppieces to the vanities one</summary>
+    public void BuildVanity ()
+    {
+        BuildCoreVanity();
+        BuildRearArmorVanity();
+        BuildFrontArmorVanity();
     }
 }

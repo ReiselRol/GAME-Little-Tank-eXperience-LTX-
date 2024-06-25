@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 /// <summary> This class is for make the Hability functions about a piece, important to do:<br></br> 1.- Implement functions CanHabilityRightClick and CanHabilityLeftClick.<br></br> 2.- Implement functions with base of the  hability HabilityLeftClick and HabilityRightClick (override). <br></br> 3.- Implement functions HabilityFiredRestartingPiece for do the clean up for the next hability<br></br> usage (try do a call of this function after you finish to do an hability)<br></br> 4.- Implements the functions of HabilityPrepared and HabilityPreparationCleanUp </summary>
-public abstract class TankPiece : MonoBehaviour
+public abstract class TankPiece : MonoBehaviour, PieceInterface
 {
     /// <summary>This boolean is for check if is Before using hability</summary>
     private bool IsHoldingPreparation = false;
